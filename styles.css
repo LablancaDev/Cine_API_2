@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(./imgs/nubes.jpg);
+    background-attachment: fixed;
+}
+
+.contenido{
+    width: 90vw;
+    min-height: 100vh;
+    margin: 2em 1.5em;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.title{
+    height: 4em;
+    text-align: center;
+    color: rgb(104, 226, 104);
+    background-image: linear-gradient(rgb(73, 75, 138),rgb(0, 0, 0));
+    line-height: 3.5em;
+}
+
+.title span{
+    border-radius: 5px;
+    color: rgb(255, 213, 0);
+    box-shadow: 2px 2px 2px  black;
+}
+
+
+.cartel img{
+    width: 200px;
+    height: 250px;
+    
+}
+
+
+.paginacion{
+    width: 100vw;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-image: linear-gradient(rgb(73, 75, 138),rgb(0, 0, 0));
+}
+
+.paginacion button{
+    height: 4em;
+    width: 10em;
+    border-radius: 5px;
+    background-color: green;
+    color: rgb(255, 213, 0);
+    font-weight: bold;
+    transition: all .2s;
+    cursor: pointer;
+    margin: 1em 0;
+}
+.paginacion button:hover{
+    background-color: rgb(27, 53, 11);
+}
+
+.number-page{
+    font-size: 2em;
+    color: rgb(255, 213, 0);
+}
+
+.contenido .cartel .enlace{
+    cursor: pointer;
+    border-style: none;
+    
+}
+
+
+
+
+
+
+.contenido .texto{
+    font-size: 2em;
+}
+.contenido .parrafo{
+    font-size: 2em;
+}
