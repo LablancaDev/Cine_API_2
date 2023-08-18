@@ -36,11 +36,15 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=d4983dafdd2af3213fc3
     .then(function(datos){
         console.log(datos)
 
-        // mostrarSinopsis(datos);
+        mostrarSinopsis(datos);
 
-        array  = "";
+    })
+})
+}
 
-// function mostrarSinopsis(datos){
+function mostrarSinopsis(datos){
+    array  = ""; /* ? */ 
+    
     datos.results.forEach(datoApi => {
         array +=`
         
@@ -58,34 +62,6 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=d4983dafdd2af3213fc3
     });
 
     document.getElementById("cont-sinopsis").innerHTML = array;
-// }
-
-    })
-})
 }
-
-
-
-// array  = "";
-
-// function mostrarSinopsis(datos){
-//     datos.results.forEach(datoApi => {
-//         array +=`
-        
-//         <div class="cartel">
-        
-//         <h2 class="title">${datoApi.title}</h2>
-        
-//         <p class="parrafo">${datoApi.overview}</p>
-
-        
-//         </div>
-        
-        
-//         `
-//     });
-
-//     document.getElementById("cont-sinopsis").innerHTML = array;
-// }
 
 consultaApi();

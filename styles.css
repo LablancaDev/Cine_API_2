@@ -56,7 +56,12 @@ body{
     justify-content: center;
     gap: 2em;
     background-image: linear-gradient(rgb(73, 75, 138),rgb(0, 0, 0));
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
+
 
 .paginacion button{
     height: 4em;

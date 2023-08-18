@@ -58,7 +58,9 @@ const conexion =async () =>{
             
         });
         
-        document.getElementById("contenido").innerHTML = series;
+        let doc = document.getElementById("contenido");
+
+        doc.innerHTML = series;
         
         //Cambio de url al pulsar 
           contenido.addEventListener("click", function(){
