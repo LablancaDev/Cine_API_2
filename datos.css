@@ -11,17 +11,6 @@ body{
     background-attachment: fixed;
 }
 
-.contenido{
-    width: 90vw;
-    min-height: 100vh;
-    margin: 2em 1.5em;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    text-align: center;
-}
-
 .title{
     height: 4em;
     text-align: center;
@@ -29,6 +18,7 @@ body{
     background-image: linear-gradient(rgb(73, 75, 138),rgb(0, 0, 0));
     line-height: 1.2em;
     margin: auto;
+    
 }
 .title2{
     line-height: 3em;
@@ -40,13 +30,26 @@ body{
     box-shadow: 2px 2px 2px  black;
 }
 
+.cont-sinopsis{
+    width: 90vw;
+    min-height: 100vh;
+    margin: 2em 1.5em;
 
-.cartel img{
-    width: 200px;
-    height: 250px;
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
 }
 
+.cartel{
+    background-image: linear-gradient(rgb(144, 144, 194), rgb(52, 52, 192));
+    border-radius: 5px;
+}
+
+.parrafo{
+    text-align: left;
+    padding: .8em;
+}
 
 .paginacion{
     width: 100vw;

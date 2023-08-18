@@ -59,7 +59,14 @@ const conexion =async () =>{
         });
         
         document.getElementById("contenido").innerHTML = series;
-
+        
+        //Cambio de url al pulsar 
+          contenido.addEventListener("click", function(){
+          window.location.href = "./datos.html";
+          
+      })
+       
+       
     //Consultar sipnosis   
     // const enlace = document.getElementById("enlace");
     // let texto = "";
