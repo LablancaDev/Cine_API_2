@@ -50,6 +50,8 @@ const conexion =async () =>{
             <a class="enlace"><img class="img" src="https://image.tmdb.org/t/p/w500/${parametro.poster_path}"></a>
 
             <h3 class="title">${parametro.title}</h3>
+
+            <p class="voto">${parametro.vote_average}</p>
             
             </div> 
 
@@ -61,9 +63,12 @@ const conexion =async () =>{
         let doc = document.getElementById("contenido");
 
         doc.innerHTML = series;
+
+       
+        
         
         //Cambio de url al pulsar 
-          contenido.addEventListener("click", function(){
+          doc.addEventListener("click", function(){
           window.location.href = "./datos.html";
           
       })

@@ -29,7 +29,14 @@ body{
     color: rgb(255, 213, 0);
     box-shadow: 2px 2px 2px  black;
 }
-
+.voto{
+    font-size: 2em;
+    color:rgb(255, 213, 0);
+    
+    position: absolute;
+    right: 4;
+    
+}
 .cont-sinopsis{
     width: 90vw;
     min-height: 100vh;
